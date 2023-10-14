@@ -533,7 +533,7 @@ $(function () {
             });
         }
 
-        $('#install-games-100').on('click', function() {
+             $('#install-games-100').on('click', function() {
             var self = $(this);
             
             $.ajax({

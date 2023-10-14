@@ -385,9 +385,6 @@ input._text-input::-webkit-input-placeholder, textarea._text-input::-webkit-inpu
 
 .lb-cstm input[type="checkbox"] {
     vertical-align: sub;
-    position: relative;
-    top: -2px;
-    margin-right: 5px;
 }
 
 /**/

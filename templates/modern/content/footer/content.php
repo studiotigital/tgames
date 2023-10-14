@@ -9,7 +9,7 @@
     }
 
     var $container = $('#content');
-        $container.masonry({
+    $container.masonry({
             itemSelector: '.post',
             columnWidth: columnWidthValue,
             isFitWidth: true,
@@ -80,17 +80,15 @@
         <div class="link-b fn-left">
             <a href="mailto:studiotigital@gmail.com">Contact</a> |
             <a href="{{CONFIG_SITE_URL}}/about">About Us</a> |
-            <a href="http://thiago3dgames.site" target="_blank">Free Games For Your Site</a>
+            <a href="http://thiago3dgames.site/" target="_blank">Free Games For Your Site</a>
         </div>
         <div class="link-b fn-right">
-            <a href="http://thiago3dgames.site" target="_blank">Partners</a> |
             <a href="{{CONFIG_SITE_URL}}/terms">Terms</a> |
             <a href="{{CONFIG_SITE_URL}}/privacy">Privacy</a> |
-            <span>Thiago3DGames.site &copy; {{CONFIG_THIS_YEAR}}</span>
+            <span>Thiago3DGames &copy; {{CONFIG_THIS_YEAR}}</span>
         </div>
         <div class="link-b2">
-            <a href="{{CONFIG_SITE_URL}}/random">Random Game</a> |
-            <a href="http://thiago3dgames.site" target="_blank">Mobile Games</a>
+            <a href="{{CONFIG_SITE_URL}}/random">Random Game</a>
         </div>
         </div>
     </div>

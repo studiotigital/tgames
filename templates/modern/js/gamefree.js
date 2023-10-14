@@ -15,7 +15,7 @@ $(".submenu").mouseenter(function(e) {
     popupHideDelay = setTimeout(function() {
         s.addClass("fn-hide");
         a.removeClass("active");
-    }, 10);
+    }, 20);
 });
 $(".menupopup").mouseenter(function() {
     clearTimeout(popupHideDelay);
@@ -23,7 +23,7 @@ $(".menupopup").mouseenter(function() {
     var self = this;
     popupHideDelay = setTimeout(function() {
         $(self).addClass("fn-hide");
-    }, 10);
+    }, 20);
 });
 $(".menu li").mouseover(function(){
     $(this).find(".tooltip").removeClass("fn-hide");

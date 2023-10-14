@@ -1,4 +1,4 @@
-<div class="category-section-top" style="text-align:center;font-size:20px;margin-bottom:10px;margin-top:20px;">
+<div class="category-section-top" style="text-align:center;font-size:20px;margin-bottom:10px;margin-top:20px;color:white;">
 	<span data-href="{{CONFIG_SITE_URL}}/categories"><i class="fa fa-tags"></i> @categories@: <i class="fa fa-chevron-right"></i></span><strong style="color:#fc0">{{CATEGORY_NAME}}</strong>
 </div>
 

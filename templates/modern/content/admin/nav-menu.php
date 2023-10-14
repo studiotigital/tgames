@@ -64,7 +64,7 @@
 		<i class="fa fa-gamepad nav-icon icon-middle"></i> Visit Website
 	</li>
 	<li class="_4lf">
-		<a href="thiago3dgames.site" target="_blank" class="spf-link _p"></a>
+		<a href="https://thiago3dgames.site" target="_blank" class="spf-link _p"></a>
 		<i class="fa fa-globe nav-icon icon-middle"></i> Games Catalog
 	</li>
 	<li class="_4lf {{NAV_MENU_SETTING}}">

@@ -3,7 +3,7 @@
 {{ADS_TOP}}
 </div>
 
-<div style="text-align:center;font-size:20px;margin-bottom:10px;margin-top:20px;">
+<div style="text-align:center;font-size:20px;margin-bottom:10px;margin-top:20px;color:white;margin-top:50px;">
 		@search_to@ 
 		<strong style="color:#fc0">{{SEARCH_PARAMETER}}</strong>
 </div>

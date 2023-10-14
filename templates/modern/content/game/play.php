@@ -10,20 +10,8 @@
     position: relative;
 }
 </style>
-<div id="topad" class="fn-clear" style="width:768px;">
 
-    <div class="adbox bgs fn-left">
-        <div class="adtitle">
-            <img src="{{CONFIG_THEME_PATH}}/image/bg_a728.png" alt="">
-        </div>
-        <div class="ad728">
-        {{ADS_HEADER}}
-        </div>
-    </div>
-
-</div>
-
-<div id="game-col" class="fn-clear">
+<div id="game-col" class="fn-clear" style="margin-top:50px;">
 
     <div class="game-left fn-left">
         <div class="ad160 bgs fn-left">
@@ -39,7 +27,7 @@
    </div>
 
     <div class="game-info bgs fn-left">
-      <div class="game-info">
+	  <div class="game-info">
     <div id="loader_container">
         <div id="preloader_box"></div>
     </div>
@@ -110,12 +98,12 @@
         if (window.document.GameEmbedSWF) return window.document.GameEmbedSWF;
     }
     function showGame(){
-        $("#loader_container").css({
+		$("#loader_container").css({
             visibility: "hidden",
             display: "none"
 
         });
-        $("#gameDiv").css({
+		$("#gameDiv").css({
                 visibility: "visible",
                 display: "block",
                 height:"100%"
