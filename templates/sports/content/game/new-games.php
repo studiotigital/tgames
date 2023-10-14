@@ -13,7 +13,6 @@
 
 
 <div class="bottomtext">
-     GameFree Games. 
-     
+    
      <br> 
 </div>

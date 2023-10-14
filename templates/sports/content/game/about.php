@@ -14,7 +14,5 @@
             <p>Our ultimate aim is to provide fun time online for moms and their kids with varieties of different games of multiple levels.</p>
         </dd>
     </dl>
-       <a href="https://gamemonetize.com" target="_blank" aria-label="GameMonetize.com CMS" style="display: block;text-align: center;padding-top: 20px;">
-                <img src="https://api.gamemonetize.com/powered_by_gamemonetize.png" alt="GameMonetize.com CMS" style="width:290px;text-align: center;margin: 0 auto;">
-            </a>
+       
 </div>

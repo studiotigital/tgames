@@ -78,14 +78,14 @@
 <div id="footer" class=fix>
     <div class="foot-inner">
         <div class="link-b fn-left">
-            <a href="malto:info@{{CONFIG_SITE_URL}}">Contact</a> |
+            <a href="mailto:studiotigital@gmail.com">Contact</a> |
             <a href="{{CONFIG_SITE_URL}}/about">About Us</a> |
             <a href="http://thiago3dgames.site/" target="_blank">Free Games For Your Site</a>
         </div>
         <div class="link-b fn-right">
             <a href="{{CONFIG_SITE_URL}}/terms">Terms</a> |
             <a href="{{CONFIG_SITE_URL}}/privacy">Privacy</a> |
-            <span>Thiago3D Games &copy; {{CONFIG_THIS_YEAR}}</span>
+            <span>Thiago3DGames &copy; {{CONFIG_THIS_YEAR}}</span>
         </div>
         <div class="link-b2">
             <a href="{{CONFIG_SITE_URL}}/random">Random Game</a>

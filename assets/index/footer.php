@@ -10,7 +10,7 @@ if($_GET['p'] != 'login') {
 	}
 }
 if (is_logged() || $_GET['p'] == 'login') {
-	$themeData['cp'] ="<div class='copyright'>© Copyright ". $themeData['config_this_year'] ." - <a href='https://thiago3dgames.site' target='_blank'>thiago3dgames.site</a></div>";	
+	$themeData['cp'] ="<div class='copyright'>© Copyright ". $themeData['config_this_year'] ." - <a href='https://thiago3dgames.site' target='_blank'>Thiago3D Games</a></div>";	
 }
 if($_GET['p'] == 'login' ||  $_GET['p'] == 'admin'  ||  $_GET['p'] == 'setting' ) {
 	$themeData['footer'] = \GameMonetize\UI::view('global/footer/all2');

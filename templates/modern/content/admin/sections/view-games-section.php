@@ -8,11 +8,8 @@
       </div>
 	</div>
 </div>
-<div class="general-box">
-	<button id="publish-all-games" class="btn-p btn-p4"><i class="fa fa-globe"></i> Publish All Games</button>
-	<button id="install-games" style="margin-left:5px;" class="btn-p btn-premium"><i class="fa fa-star"></i> Install All Games</button>
-	<button id="install-games-100" style="margin-left:5px;" class="btn-p btn-premium"><i class="fa fa-star"></i> Install Last 100 Games</button>
-	<button id="install-games-1000" style="margin-left:5px;" class="btn-p btn-premium"><i class="fa fa-star"></i> Install Last 1000 Games</button>
-	<div class="installing-message"></div>
-</div>
+
+
+
+
 {{GAMES_CONTAINER}}

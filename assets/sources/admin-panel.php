@@ -18,12 +18,24 @@
 			    }
 		}
 
-		$date =  date('Ymdms');
-		$date = strtotime($date);
+		
 
-		$themeData['news'] = '<div class="stats-box" style="width:100%;padding:10px;">
-				<iframe style="min-height: 198px;" src="https://api.gamemonetize.com/cms.html?'. $date. '" width="100%" height="100%" scrolling="none" frameborder="0"></iframe>
-				</div>';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		$navigation_menu_data = ( isset($_GET['section']) ) ? $_GET['section'] : 'global';
 		$themeData['nav_menu_global'] = listMenu($navigation_menu_data, 'global');

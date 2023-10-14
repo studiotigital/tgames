@@ -1,0 +1,293 @@
+/* Estilize o link de categoria ativo */
+.active {
+    color: yellow;
+    /* Adicione outros estilos desejados aqui */
+}
+
+/* Estilize os botões do menu */
+.menu-button {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Estilize o botão do menu quando clicado */
+.menu-button.active {
+    background-color: green;
+}
+
+/* Estilos para o corpo do documento */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('brabra.jpg'); /* Substitua 'bandeira-do-brasil.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso tornará a imagem de fundo fixa */
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para o vídeo */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    background-color: yellow;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 160px;
+    height: auto;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* Estilos para o carrossel */
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.carousel-slide {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para os blocos de informação */
+.info-block {
+	text-align: justify;
+    background-color: #00CC33;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative; /* Adicionado para posicionamento da moldura */
+}
+
+
+
+
+
+
+
+
+
+.info-item {
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Adicionado para posicionamento da moldura */
+}
+
+.info-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-item button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Moldura de destaque */
+.highlight-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid #777;
+    z-index: -1;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header a {
+        margin: 10px 0;
+    }
+
+    .carousel-container {
+        max-width: none;
+    }
+
+    .info-item {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: yellow;
+    padding: 20px;
+}
+
+.sitemap {
+    text-align: center;
+}
+
+.sitemap a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Estilos para o botão de bate-papo flutuante */
+.floating-chat {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    background-color: green; /* Cor de fundo do botão */
+    border-radius: 50%;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    cursor: pointer;
+    z-index: 9999; /* Para ficar sobre outros elementos */
+}
+
+.floating-chat img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Estilize o botão ao passar o mouse */
+.floating-chat:hover {
+    background-color: #25d366; /* Cor de fundo ao passar o mouse (cor do WhatsApp) */
+}
+
+/* Resto dos estilos do seu site... */
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+	
+	
+	
+}
+
+.app {
+    width: calc(33.33% - 20px);
+    background-color: #0099FF;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.app img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Estilos para o modal de vídeo */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.popup-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .app {
+        width: calc(50% - 20px);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .app {
+        width: 100%;
+    }
+}
+
+
+
