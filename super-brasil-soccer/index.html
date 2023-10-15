@@ -23,7 +23,19 @@
 
 <style>
 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* 100% da largura da viewport (janela do navegador) */
+    height: 100vh; /* 100% da altura da viewport */
+    overflow: hidden; /* Para esconder a barra de rolagem se a página for maior */
+  }
 
+  iframe {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2); /* Ajuste o valor para controlar o efeito de zoom/stretch */
+  }
 		
 		
  .video-container2 {
@@ -51,7 +63,7 @@
             margin: 10px;
 			text-align: justify;
         }		
-		
+	}	
 		
 		
 
@@ -173,7 +185,7 @@
 	
 	
 	
-	<div class="container2">
+<div class="container2">
     <div class="block2">
 								
 <div class="container2">
@@ -189,7 +201,8 @@ Super Soccer Brasil: Entre em campo com o melhor time de futebol animado e prove
 	
     <!-- Conteúdo do jogo em um iframe -->
     <div id="game-container2" style="width:499px; height:299px; margin:auto;">
-    <iframe src="https://supersoccerbr.vercel.app/" frameborder="0" width="100%" height="100%"></iframe>
+   <iframe id="game-iframe" src="https://supersoccerbr.vercel.app/" frameborder="0"></iframe>
+   
     </div>
 
 
