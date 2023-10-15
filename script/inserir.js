@@ -11,7 +11,7 @@ function addGame(name, url, imageUrl) {
 }
 
 // Manipula o envio do formulário
-$('#id=content').submit(function (event) {
+$('#content').submit(function (event) {
     event.preventDefault();
     var gameName = $('#game-name').val();
     var gameUrl = $('#game-url').val();
