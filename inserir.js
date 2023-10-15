@@ -1,6 +1,6 @@
-$('#content').submit(function (event) {
+// Manipula o envio do formulário
+$('#game-form').submit(function (event) {
     event.preventDefault();
-    console.log('Evento de envio do formulário acionado.'); // Adicione essa linha
     var gameName = $('#game-name').val();
     var gameUrl = $('#game-url').val();
     var gameImage = $('#game-image').val();
