@@ -2,17 +2,17 @@
 <html>
 <head>
     <title>Thiago3D Games</title>
-    <script src="script/inserir.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h1>Inserir Dados do Jogo</h1>
-    
+
     <!-- Formulário para inserir dados do jogo -->
     <form id="content">
         <label for="game-name">Nome do Jogo:</label>
         <input type="text" id="game-name" placeholder="Nome do Jogo" required>
 
-        <label for "game-url">URL do Jogo:</label>
+        <label for="game-url">URL do Jogo:</label>
         <input type="text" id="game-url" placeholder="URL do Jogo" required>
 
         <label for="game-image">URL da Imagem do Jogo:</label>
@@ -22,5 +22,37 @@
     </form>
 
     <div id="result-message"></div>
+
+    <script>
+        // Função para adicionar um novo jogo à página
+        function addGame(name, url, imageUrl) {
+            var newGame = '<div class="post">';
+            newGame += '<a href="' + url + '">';
+            newGame += '<img src="' + imageUrl + '" alt="' + name + '">';
+            newGame += '<p class="post-name">' + name + '</p>';
+            newGame += '<span class="featured_icon"></span>';
+            newGame += '</a></div>';
+
+            $('#content').prepend(newGame);  // Adiciona o novo jogo no topo da lista
+        }
+
+        // Manipula o envio do formulário
+        $('#content').submit(function (event) {
+            event.preventDefault();
+            var gameName = $('#game-name').val();
+            var gameUrl = $('#game-url').val();
+            var gameImage = $('#game-image').val();
+
+            // Adicione aqui qualquer validação necessária
+
+            // Chame a função addGame para adicionar o novo jogo à página
+            addGame(gameName, gameUrl, gameImage);
+
+            // Limpa os campos do formulário
+            $('#game-name').val('');
+            $('#game-url').val('');
+            $('#game-image').val('');
+        });
+    </script>
 </body>
 </html>
