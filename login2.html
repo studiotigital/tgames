@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Thiago3D Games</title>
+    <title>Formulário de Novo Jogo</title>
 </head>
 <body>
-    <h1>Inserir Dados do Jogo</h1>
+    <h1>Formulário para Adicionar Novo Jogo</h1>
 
-    <!-- Formulário para inserir dados do jogo -->
-    <form id="content" onsubmit="salvarDados(event)">
-        <label for="game-name">Nome do Jogo:</label>
-        <input type="text" id="game-name" placeholder="Nome do Jogo" required>
+    <form id="jogo-form" onsubmit="adicionarJogo(event)">
+        <label for="jogo-nome">Nome do Jogo:</label>
+        <input type="text" id="jogo-nome" placeholder="Nome do Jogo" required>
 
-        <label for="game-url">URL do Jogo:</label>
-        <input type="text" id="game-url" placeholder="URL do Jogo" required>
+        <label for="jogo-url">URL do Jogo:</label>
+        <input type="text" id="jogo-url" placeholder="URL do Jogo" required>
 
-        <button type="submit">Inserir</button>
+        <button type="submit">Adicionar Jogo</button>
     </form>
 
-    <script>
-        function salvarDados(event) {
-            event.preventDefault();
-
-            // Captura os valores dos campos
-            var nomeDoJogo = document.getElementById("game-name").value;
-            var urlDoJogo = document.getElementById("game-url").value;
-
-            // Salva os dados no armazenamento local
-            localStorage.setItem("nomeDoJogo", nomeDoJogo);
-            localStorage.setItem("urlDoJogo", urlDoJogo);
-
-            alert("Dados salvos com sucesso!");
-        }
-    </script>
+    <script src="adicionarJogo.js"></script>
 </body>
 </html>
