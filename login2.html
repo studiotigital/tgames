@@ -2,13 +2,12 @@
 <html>
 <head>
     <title>Thiago3D Games</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h1>Inserir Dados do Jogo</h1>
 
     <!-- Formulário para inserir dados do jogo -->
-    <form id="content">
+    <form id="game-form">
         <label for="game-name">Nome do Jogo:</label>
         <input type="text" id="game-name" placeholder="Nome do Jogo" required>
 
@@ -21,8 +20,10 @@
         <button type="submit">Inserir Jogo</button>
     </form>
 
-    <div id="result-message"></div>
+    <div id="content">
+        <!-- Aqui serão inseridos os novos jogos -->
+    </div>
 
-    <script src="/script/inserir.js"></script>
+    <script src="inserir.js"></script>
 </body>
 </html>
