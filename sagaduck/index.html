@@ -8,31 +8,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="styles.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4043765559226642" crossorigin="anonymous"></script>
+
+    
     <style>
+
+
+        #game-container {
+            width: 499px;
+            height: 299px;
+            margin: auto;
+            border: 1px solid #ccc; /* Adicione uma borda ao iframe */
+        }
+
+        #game-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+       
+        .video-container iframe {
+            width: 499px;
+            height: 299px;
+        }
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            max-width: 100%;
+        }
+        .block2 {
+            width: 400px;
+            text-align: center;
+            text-align: justify;
+            margin: 10px;
+        }
+        .block2 p {
+            text-align: justify;
+        }
+
+
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            max-width: 100%;
+        }
+
+        .block {
+            text-align: center;
+            margin: 10px;
+            text-align: justify;
+            max-width: 100%;
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+        /* Estilos específicos para desktop */
         .video-container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
+
         .video-container iframe {
-            width: 700px;
-            height: 400px;
+            width: 499px;
+            height: 299px;
         }
-        .container2 {
-            display: flex;
-            justify-content: center;
-            text-align: justify;
+
+        /* Estilos específicos para mobile */
+        @media screen and (max-width: 600px) {
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
         }
-        .block2 {
-            width: 400px;
-            text-align: center;
-            margin: 10px;
-        }
-        .block2 p {
-            text-align: justify;
-        }
+
+
+        
     </style>
+
+
+    
     <link rel="stylesheet" type="text/css" href="https://tgames.vercel.app/templates/modern/css/play.css">
     <link rel="stylesheet" type="text/css" href="https://tgames.vercel.app/templates/modern/css/all.css?ver">
     <script src="https://tgames.vercel.app/templates/modern/js/jquery.v1.min.js"></script>
@@ -103,17 +164,17 @@
         </a>
     </div>
     <!-- Conteúdo do jogo em um iframe -->
-    <div id="game-container" style="width:700px; height:400px; margin:auto;">
-        <iframe src="https://sagaduck.vercel.app/" frameborder="0" width="100%" height="100%"></iframe>
-    </div>
+   <div id="game-container" style="width:499px; height:299px; margin:auto;">
+    <iframe src="https://sagaduck.vercel.app/" frameborder="0" width="100%" height="100%"></iframe>
+</div>
     <div class="container2">
         <div class="block2">
-            <a href="http://localhost/new-games" target="_self">
+            <a href="http://tgames.vercel.app/new-games" target="_self">
                 <img src="videoj1.png" height="30" width="400">
             </a>
         </div>
     </div>
-    <div class="video-container" style="width:700px; height:400px; margin:auto;">
+    <div class="video-container" style="width:499px; height:299px; margin:auto;">
         <iframe src="https://www.youtube.com/embed/t-e75fWxaZA?autoplay=1&mute=1&controls=0&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen onclick="return false;"></iframe>
     </div>
     <div class="powr-hit-counter" id="1afc94c1_1689336586"></div>
@@ -132,14 +193,14 @@
                 <span>Thiago3DGames.site &copy; 2023</span>
             </div>
             <div class="link-b2">
-                <a href="https://supersoccerbr.vercel.app/random">Random Game</a> |
+                <a href="https://play.google.com/store/apps/dev?id=7116791576701423724">Mobile</a> |
                 <a href="https://play.google.com/store/apps/dev?id=7116791576701423724" target="_blank">Mobile Games</a>
             </div>
         </div>
     </div>
     <div id="BackTop"></div>
-    <script src="http://localhost/templates/modern/js/jquery.masnory.min.js"></script>
-    <script src="http://localhost/templates/modern/js/gamefree.js"></script>
+    <script src="https://tgames.vercel.app/templates/modern/js/jquery.masnory.min.js"></script>
+    <script src="https://tgames.vercel.app/templates/modern/js/gamefree.js"></script>
     <div class="container">
         <div class="ad-container">
             <!-- Coloque o código de anúncio aqui -->
