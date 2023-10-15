@@ -3,6 +3,48 @@
 <head>
 <title>Thiago3D Games</title>
 
+
+
+
+
+<script type="text/javascript">
+    // Função para adicionar um novo jogo à página
+    function addGame(name, url, imageUrl) {
+        var newGame = '<div class="post">';
+        newGame += '<a href="' + url + '">';
+        newGame += '<img src="' + imageUrl + '" alt="' + name + '">';
+        newGame += '<p class="post-name">' + name + '</p>';
+        newGame += '<span class="featured_icon"></span>';
+        newGame += '</a></div>';
+
+        $('#content').prepend(newGame);  // Adiciona o novo jogo no topo da lista
+    }
+
+    // Manipula o envio do formulário
+    $('#game-form').submit(function (event) {
+        event.preventDefault();
+        var gameName = $('#game-name').val();
+        var gameUrl = $('#game-url').val();
+        var gameImage = $('#game-image').val();
+
+        // Adicione aqui qualquer validação necessária
+
+        // Chame a função addGame para adicionar o novo jogo à página
+        addGame(gameName, gameUrl, gameImage);
+
+        // Limpa os campos do formulário
+        $('#game-name').val('');
+        $('#game-url').val('');
+        $('#game-image').val('');
+    });
+</script>
+
+
+
+
+
+	
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta http-equiv="x-dns-prefetch-control" content="on" />
