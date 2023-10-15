@@ -17,20 +17,8 @@
         <button type="submit">Inserir</button>
     </form>
 
-    <script>
-        function salvarDados(event) {
-            event.preventDefault();
-
-            // Captura os valores dos campos
-            var nomeDoJogo = document.getElementById("game-name").value;
-            var urlDoJogo = document.getElementById("game-url").value;
-
-            // Salva os dados no armazenamento local
-            localStorage.setItem("nomeDoJogo", nomeDoJogo);
-            localStorage.setItem("urlDoJogo", urlDoJogo);
-
-            alert("Dados salvos com sucesso!");
-        }
-    </script>
+    <!-- Inclua os scripts jQuery e o seu script de inserção aqui -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="inserir.js"></script>
 </body>
 </html>
