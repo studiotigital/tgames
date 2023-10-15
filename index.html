@@ -17,11 +17,11 @@
         newGame += '<span class="featured_icon"></span>';
         newGame += '</a></div>';
 
-        $('#id=content').prepend(newGame);  // Adiciona o novo jogo no topo da lista
+        $('#content').prepend(newGame);  // Adiciona o novo jogo no topo da lista
     }
 
     // Manipula o envio do formulário
-    $('#id=content').submit(function (event) {
+    $('#content').submit(function (event) {
         event.preventDefault();
         var gameName = $('#game-name').val();
         var gameUrl = $('#game-url').val();
