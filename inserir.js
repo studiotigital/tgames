@@ -1,37 +1,34 @@
-// inserir.js
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Função para adicionar um novo jogo à página
+        function addGame(name, url, imageUrl) {
+            var newGame = '<div class="post">';
+            newGame += '<a href="' + url + '">';
+            newGame += '<img src="' + imageUrl + '" alt="' + name + '">';
+            newGame += '<p class="post-name">' + name + '</p>';
+            newGame += '<span class="featured_icon"></span>';
+            newGame += '</a></div>';
 
-$(document).ready(function() {
-    // Seleciona o formulário pelo ID
-    var form = $("#content");
+            $('#content').prepend(newGame);  // Adiciona o novo jogo no topo da lista
+        }
 
-    // Manipula o evento de envio do formulário
-    form.submit(function(event) {
-        event.preventDefault();
+        // Manipula o envio do formulário
+        $('#game-form').submit(function(event) {
+            event.preventDefault();
+            var gameName = $('#game-name').val();
+            var gameUrl = $('#game-url').val();
+            var gameImage = $('#game-image').val();
 
-        // Coleta os dados do formulário
-        var gameName = $("#game-name").val();
-        var gameUrl = $("#game-url").val();
-        var gameImage = $("#game-image").val();
+            // Adicione aqui qualquer validação necessária
 
-        // Cria uma nova div para o novo jogo
-        var newGameDiv = '<div class="post">' +
-            '<a href="' + gameUrl + '">' +
-            '<img src="' + gameImage + '" alt="' + gameName + '">' +
-            '<p class="post-name">' + gameName + '</p>' +
-            '<span class="featured_icon"></span>' +
-            '</a>' +
-            '</div>';
+            // Chame a função addGame para adicionar o novo jogo à página
+            addGame(gameName, gameUrl, gameImage);
 
-        // Insere a nova div na div com o id "content"
-        $("#content").append(newGameDiv);
-
-        // Limpa os campos do formulário
-        $("#game-name").val("");
-        $("#game-url").val("");
-        $("#game-image").val("");
-
-        // Exibe uma mensagem de sucesso
-        var message = "Dados do jogo inseridos com sucesso!";
-        $("#result-message").text(message);
+            // Limpa os campos do formulário
+            $('#game-name').val('');
+            $('#game-url').val('');
+            $('#game-image').val('');
+        });
     });
-});
+</script>
