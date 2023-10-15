@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Manipula o envio do formulário
-    $('#game-form').submit(function (event) {
+    $('#content').submit(function (event) {
         event.preventDefault();
         var gameName = $('#game-name').val();
         var gameUrl = $('#game-url').val();
