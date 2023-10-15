@@ -1,3 +1,11 @@
+
+$('#content').submit(function (event) {
+    event.preventDefault();
+    console.log('Evento de envio do formulário acionado.'); // Adicione essa linha
+    // Resto do seu código...
+});
+
+
 // Função para adicionar um novo jogo à página
 function addGame(name, url, imageUrl) {
     var newGame = '<div class="post">';
