@@ -6,14 +6,14 @@
 <body>
     <h1>Formulário para Adicionar Novo Jogo</h1>
 
-    <form id="jogo-form" onsubmit="adicionarJogo(event)">
+    <form id="jogo-form">
         <label for="jogo-nome">Nome do Jogo:</label>
         <input type="text" id="jogo-nome" placeholder="Nome do Jogo" required>
 
         <label for="jogo-url">URL do Jogo:</label>
         <input type="text" id="jogo-url" placeholder="URL do Jogo" required>
 
-        <button type="submit">Adicionar Jogo</button>
+        <button type="button" id="adicionarJogo">Adicionar Jogo</button>
     </form>
 
     <script src="inserir.js"></script>
