@@ -1,0 +1,354 @@
+
+.active {
+    color: yellow;
+    
+}
+
+.menu-button {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.menu-button.active {
+    background-color: green;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('brabra.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.logo {
+    max-width: 10px;
+    height: auto;
+}
+
+.menuh {
+  margin-right: 190px; 
+}
+
+
+
+.menuh2 {
+  margin-right: 299px; 
+}
+
+
+
+
+.info-block {
+	text-align: justify;
+    background-color: #00CC33;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative; 
+}
+
+
+.info-item {
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    position: relative; 
+}
+
+.info-item button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+	flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+	
+}
+
+.info-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.highlight-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid #777;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .header a {
+        margin: 2px 0;
+    }
+
+    .carousel-container {
+        max-width: none;
+    }
+
+    .info-item {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+
+.footer {
+    background-color: yellow;
+    padding: 20px;
+}
+
+.sitemap {
+    text-align: center;
+}
+
+.sitemap a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.floating-chat {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    background-color: green; 
+    border-radius: 50%;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    z-index: 9999; 
+}
+
+.floating-chat img {
+    width: 80px;
+    height: 80px;
+}
+
+.floating-chat:hover {
+    background-color: #25d366; 
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+		
+}
+
+.app {
+    width: calc(33.33% - 20px);
+    background-color: #0099FF;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.app img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.popup-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+
+#game-popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+#game-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#close-game-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.logo2 a {
+    width: 163px;
+    height: 117px;
+    background: url(logo3.png) no-repeat;
+    display: block;
+    position: relative;
+    top: -1px;
+    padding: 0px !important;
+}
+
+.logo2 a:hover {
+    background: url(logo4.png) no-repeat;
+}
+
+.logo2 {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        margin-left: -78px;
+    }
+	
+.logo2 {
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+	
+.logo2 a{
+   width: 163px !important;
+   height: 117px !important;
+}
+
+
+.logo3 a {
+    width: 163px;
+    height: 117px;
+    background: url(logo5.png) no-repeat;
+    display: block;
+    position: relative;
+    top: -1px;
+    padding: 0px !important;
+}
+
+.logo3 a:hover {
+    background: url(logo6.png) no-repeat;
+}
+
+.logo3 {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        margin-left: -78px;
+    }
+	
+.logo3 {
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+	
+.logo3 a{
+   width: 163px !important;
+   height: 117px !important;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .app {
+        width: calc(50% - 20px);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .app {
+        width: 100%;
+    }
+}
+
+
