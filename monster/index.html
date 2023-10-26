@@ -43,12 +43,12 @@
 	
     <section id="home">
 
-  <iframe id="gameFrame" src="https://thgames.cleverapps.io/puzzlemoney3/" width="800" height="450" scrolling="none" frameborder="0"></iframe>
+   <iframe id="gameFrame" src="https://thgames.cleverapps.io/puzzlemoney3/" width="800" height="450" scrolling="none" frameborder="0"></iframe>
 
     <!-- Botão para tela cheia -->
     <button onclick="toggleFullScreen()">Tela Cheia</button>
 
-    <a onclick="openGameFullscreen('https://thgames.cleverapps.io/puzzlemoney3/')">
+    <a onclick="expandToFullScreen()">
         <video autoplay loop muted>
             <source src="https://tgames.vercel.app/videos/magic1.mp4" type="video/mp4">
         </video>
@@ -70,10 +70,15 @@
             }
         }
 
-        // Função para abrir o jogo em uma nova janela em tela cheia quando o vídeo é clicado
-        function openGameFullscreen(gameURL) {
-            var gameWindow = window.open(gameURL, '_blank');
-            gameWindow.document.documentElement.requestFullscreen();
+        // Função para expandir o jogo para tela cheia ao clicar no vídeo
+        function expandToFullScreen() {
+            var iframe = document.getElementById('gameFrame');
+
+            iframe.style.position = 'absolute';
+            iframe.style.top = '0';
+            iframe.style.left = '0';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
         }
     </script>
 	
